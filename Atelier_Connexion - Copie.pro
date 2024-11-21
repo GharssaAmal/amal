@@ -4,8 +4,10 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql charts network
+QT += core gui sql
+QT += network
 QT += charts
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,7 +27,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
-
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
@@ -41,7 +42,6 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
-
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

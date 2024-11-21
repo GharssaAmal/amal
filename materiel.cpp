@@ -1,7 +1,10 @@
 #include "materiel.h"
 #include <iostream>
 #include <QSqlError>
-
+#include "materiel.h"
+#include <QStandardItemModel>
+#include <QStandardItem>
+#include <QTableView>
 
 // Constructeur par défaut
 Materiel::Materiel()
@@ -139,12 +142,58 @@ bool Materiel::modifier(int id) {
     return query.exec(); // Returns true if update succeeded, false otherwise
 }
 
+QSqlQueryModel* Materiel::rechercher(const QString& searchQuery) {
+    // Create a new query model to display the results
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+    // Prepare the SQL query to search by id or name (nom)
+    QSqlQuery query;
+
+    // If the search query is numeric, assume it's an ID search
+    if (searchQuery.toInt() != 0) {
+        query.prepare("SELECT * FROM MATERIEL WHERE id = :searchQuery");
+        query.bindValue(":searchQuery", searchQuery.toInt());
+    } else {
+        // Otherwise, search by name (nom)
+        query.prepare("SELECT * FROM MATERIEL WHERE nom LIKE :searchQuery");
+        query.bindValue(":searchQuery", "%" + searchQuery + "%");
+    }
+
+    // Execute the query
+    query.exec();
+
+    // Set the query results to the model
+    model->setQuery(query);
+
+    // Set the headers for each column
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("État"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Date d'achat"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Durée de garantie"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Prix"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("Quantité disponible"));
+    model->setHeaderData(7, Qt::Horizontal, QObject::tr("Durée de vie"));
+
+    return model;
+}
 
 
+QSqlQueryModel* Materiel::trier(const QString& critere, const QString& ordre) {
+    QSqlQueryModel* model = new QSqlQueryModel();
+    QString query = QString("SELECT * FROM MATERIEL ORDER BY %1 %2").arg(critere, ordre);
 
+    model->setQuery(query);
 
+    // Définir les en-têtes des colonnes
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Etat"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Date d'achat"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Durée Garantie"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Prix"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("Quantité Disponible"));
+    model->setHeaderData(7, Qt::Horizontal, QObject::tr("Durée de Vie"));
 
-
-
-
-
+    return model;
+}

@@ -54,6 +54,13 @@ public:
     bool supprimer(int id);
     bool modifier(int id);
     QSqlQueryModel* afficher();
+    QSqlQueryModel* rechercher(const QString& searchQuery);
+    QSqlQueryModel* trier(const QString& critere, const QString& ordre);
+
+ void genererStatistiquesMateriel(QSqlQueryModel* model);
+
 };
 
+
 #endif // MATERIEL_H
+
