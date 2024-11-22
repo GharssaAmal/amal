@@ -25,11 +25,16 @@
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */
+QPushButton {
+    border-radius: 50px;
+    background-color: #F0F0F0; /* Couleur de fond */
+    border: 2px solid #000; /* Bordure */
+}</string>
     </property>
     <property name="text">
      <string>Ajouter</string>
@@ -45,9 +50,16 @@ border: 2px solid green; /* Définit la bordure en vert */
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -63,12 +75,16 @@ border: 2px solid green; /* Définit la bordure en vert */
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QTableView{
-	color: rgb(0, 170, 0);
-	background-color: rgb(170, 170, 255);}
-QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}
+
 </string>
     </property>
     <property name="text">
@@ -85,9 +101,15 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -103,9 +125,15 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -121,7 +149,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Idmatériel</string>
@@ -137,7 +166,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Nom</string>
@@ -153,7 +183,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Etat</string>
@@ -169,7 +200,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Date d'achat</string>
@@ -185,9 +217,16 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -203,7 +242,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Duree Garantie</string>
@@ -219,9 +259,15 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -237,9 +283,16 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -255,9 +308,16 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 170, 0);}</string>
+     <string notr="true">QTableView {
+    color: rgb(175, 238, 238); /* Bleu clair */
+    background-color: rgb(170, 170, 255); /* Reste inchangé */
+}
+
+QLineEdit {
+    color: rgb(255, 255, 255); /* Blanc */
+    background-color: rgb(175, 238, 238); /* Bleu clair */
+}
+</string>
     </property>
     <property name="text">
      <string/>
@@ -273,7 +333,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Prix</string>
@@ -289,7 +350,8 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);</string>
     </property>
     <property name="text">
      <string>Quantite disponible</string>
@@ -305,7 +367,9 @@ QLineEdit{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 85, 127);
+</string>
     </property>
     <property name="text">
      <string>Duree de vie</string>
@@ -314,9 +378,9 @@ QLineEdit{
    <widget class="QTableView" name="affichage">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>40</y>
-      <width>871</width>
+      <x>430</x>
+      <y>30</y>
+      <width>611</width>
       <height>441</height>
      </rect>
     </property>
@@ -359,11 +423,11 @@ QLineEdit{
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>supression</string>
@@ -380,11 +444,11 @@ border: 2px solid green; /* Définit la bordure en vert */
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
- border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+ border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>modifier</string>
@@ -401,11 +465,11 @@ border: 2px solid green; /* Définit la bordure en vert */
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>Rechercher</string>
@@ -451,13 +515,13 @@ border: 2px solid green; /* Définit la bordure en vert */
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 350 italic 11pt &quot;Segoe UI&quot;;
+     <string notr="true">
 font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>trier</string>
@@ -494,11 +558,11 @@ border: 2px solid green; /* Définit la bordure en vert */
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>Pdf</string>
@@ -515,11 +579,12 @@ border: 2px solid green; /* Définit la bordure en vert */
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+
+  border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>statistique</string>
@@ -549,11 +614,11 @@ border: 2px solid green; /* Définit la bordure en vert */
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>Notifier </string>
@@ -562,10 +627,10 @@ border: 2px solid green; /* Définit la bordure en vert */
    <widget class="QLabel" name="qrcodeLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>670</y>
-      <width>91</width>
-      <height>91</height>
+      <x>620</x>
+      <y>640</y>
+      <width>151</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
@@ -575,19 +640,19 @@ border: 2px solid green; /* Définit la bordure en vert */
    <widget class="QPushButton" name="qrcodegen">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>718</y>
+      <x>780</x>
+      <y>700</y>
       <width>141</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 600 italic 11pt &quot;Segoe UI&quot;;
-border-color: rgb(0, 85, 0);
-border: 2px solid green; /* Définit la bordure en vert */
-    padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
-    background-color: white; /* Optionnel, définit la couleur de fond du bouton */
-    color: black; /* Optio</string>
+border-color: rgb(0, 0, 139); /* Bleu roi */
+border: 2px solid rgb(0, 0, 139); /* Bordure bleu roi */
+padding: 10px 20px; /* Optionnel, pour ajouter de l'espace à l'intérieur du bouton */
+background-color: white; /* Optionnel, définit la couleur de fond du bouton */
+color: rgb(255, 85, 127); /* Rose pour le texte */</string>
     </property>
     <property name="text">
      <string>qrcode</string>
@@ -597,19 +662,57 @@ border: 2px solid green; /* Définit la bordure en vert */
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
+      <y>30</y>
       <width>371</width>
       <height>441</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(32, 77, 19);</string>
+     <string notr="true">background-color: rgb(32, 78, 127);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <zorder>affichage</zorder>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1591</width>
+      <height>911</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../Pictures/Screenshots/Capture d'écran 2024-11-21 233216.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>30</y>
+      <width>221</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../Pictures/Screenshots/Capture d'écran 2024-11-22 000039.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_12</zorder>
    <zorder>label_10</zorder>
    <zorder>ajouter_Materiel</zorder>
    <zorder>id_materiel</zorder>
@@ -643,6 +746,8 @@ border: 2px solid green; /* Définit la bordure en vert */
    <zorder>mail</zorder>
    <zorder>qrcodeLabel</zorder>
    <zorder>qrcodegen</zorder>
+   <zorder>affichage</zorder>
+   <zorder>label_11</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
